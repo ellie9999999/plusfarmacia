@@ -1,0 +1,113 @@
+.login-background {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #fce4ec, #e1bee7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-card {
+  background: #fff;
+  padding: 3rem 2.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+  max-width: 400px;
+}
+
+.brand {
+  font-size: 2.5rem;
+  color: #d81b60;
+  margin-bottom: 1rem;
+}
+
+.brand span {
+  color: #ab47bc;
+}
+
+.login-card h2 {
+  margin-bottom: 1rem;
+  color: #6a1b9a;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  border: 1px solid #ce93d8;
+  font-size: 1rem;
+}
+
+.login-card button {
+  background: #f06292;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-top: 1rem;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.login-card button:hover {
+  background: #ec407a;
+}
+
+.extras {
+  margin-top: 1rem;
+}
+
+.extras a {
+  color: #8e24aa;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+
+.extras a:hover {
+  text-decoration: underline;
+}
+
+.pill {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  border-radius: 10px;
+  background: #f06292;
+  opacity: 0.5;
+  animation: float 6s infinite ease-in-out;
+}
+
+.pill1 {
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.pill2 {
+  top: 40%;
+  right: 25%;
+  width: 70px;
+  background: #ce93d8;
+  animation-delay: 2s;
+}
+
+.pill3 {
+  bottom: 15%;
+  left: 30%;
+  width: 40px;
+  background: #f48fb1;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
