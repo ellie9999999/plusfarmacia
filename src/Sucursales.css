@@ -1,0 +1,90 @@
+.sucursales-container {
+  padding: 2rem 1rem;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+
+.sucursal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.sucursal-header h2 {
+  font-size: 2rem;
+  color: #8a427d;
+}
+
+.volver-btn {
+  background-color: #8a427d;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: 0.3s;
+}
+
+.volver-btn:hover {
+  background-color: #6a2e5d;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+}
+
+.sucursal-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.sucursal-card {
+  padding: 1.5rem;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.sucursal-card:hover {
+  transform: translateY(-5px);
+}
+
+.sucursal-card h3 {
+  margin-bottom: 1rem;
+  color: #4a148c;
+}
+
+.sucursal-card p {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #333;
+}
+
+.sucursal-card a {
+  color: #25d366;
+  font-weight: bold;
+  text-decoration: none;
+}

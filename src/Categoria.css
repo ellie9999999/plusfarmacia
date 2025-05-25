@@ -1,0 +1,154 @@
+.categoria-page {
+  padding: 2rem 1rem;
+  background: #fff5f8;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Banner */
+.banner-categoria {
+  background-color: #ffcdd2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 2rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.banner-texto h3 {
+  font-size: 1.6rem;
+  color: #880e4f;
+  max-width: 400px;
+}
+
+.btn-banner {
+  background-color: #ec407a;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  border-radius: 30px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.banner-img {
+  max-height: 180px;
+  border-radius: 12px;
+}
+
+/* Título categoría */
+.titulo-categoria {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.titulo-categoria span {
+  font-weight: bold;
+  color: #8e24aa;
+}
+
+/* Filtros */
+.filtros-categoria {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-filtro {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.select-orden {
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Productos */
+.productos-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.producto-card {
+  background: white;
+  padding: 1rem;
+  width: 240px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.producto-card:hover {
+  transform: translateY(-5px);
+}
+
+.producto-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.producto-card button {
+  background: #8a427d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+ /* Pastillas flotantes */
+.pill {
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  border-radius: 15px;
+  opacity: 0.4;
+  animation: float 6s infinite ease-in-out;
+  z-index: 0;
+}
+
+.pill1 { background: #f48fb1; top: 10%; left: 5%; }
+.pill2 { background: #ce93d8; top: 20%; right: 10%; }
+.pill3 { background: #b2ebf2; bottom: 15%; left: 20%; }
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Botón volver */
+.volver-container {
+  text-align: right;
+  margin: 1rem 0;
+}
+
+.btn-volver {
+  background-color: #8a427d;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-volver:hover {
+  background-color: #6a2e5d;
+}

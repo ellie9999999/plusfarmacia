@@ -1,30 +1,32 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Login.css';
+import './Register.css';
 
-function Login() {
+function Register() {
   return (
-    <div className="login-background">
+    <div className="register-background">
       <div className="pill pill1"></div>
       <div className="pill pill2"></div>
       <div className="pill pill3"></div>
 
-      <div className="login-card">
+      <div className="register-card">
         <h1 className="brand">FarmaPlus<span>+</span></h1>
-        <h2>Iniciar sesión</h2>
+        <h2>Crea tu cuenta</h2>
         <form>
+          <input type="text" placeholder="Nombre completo" required />
           <input type="email" placeholder="Correo electrónico" required />
           <input type="password" placeholder="Contraseña" required />
-          <button type="submit">Entrar</button>
+          <input type="password" placeholder="Confirmar contraseña" required />
+          <button type="submit">Registrarse</button>
         </form>
 
         <div className="extras">
-          <Link to="/Forgot-password">¿Olvidaste tu contraseña?</Link>
-          <p>¿No tienes cuenta? <Link to="/registro">Regístrate</Link></p>
+          <p>¿Ya tienes cuenta? <Link to="/login">Inicia sesión</Link></p>
         </div>
       </div>
     </div>
   );
 }
 
-export default Login;
+export default Register;
+

@@ -1,0 +1,114 @@
+.register-background {
+  background: linear-gradient(to right, #fce4ec, #e1bee7);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+.register-card {
+  background: #fff;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  z-index: 10;
+}
+
+.register-card h1.brand {
+  color: #ec407a;
+  margin-bottom: 0.5rem;
+}
+
+.register-card h1 span {
+  color: #ba68c8;
+}
+
+.register-card h2 {
+  margin-bottom: 1.5rem;
+  color: #9c27b0;
+}
+
+.register-card input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.register-card button {
+  background-color: #ec407a;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.register-card button:hover {
+  background-color: #d81b60;
+}
+
+.register-card .extras {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.register-card .extras a {
+  color: #7b1fa2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-card .extras a:hover {
+  text-decoration: underline;
+}
+
+/* Pastillas flotantes */
+.pill {
+  position: absolute;
+  border-radius: 50px;
+  background: rgba(255, 182, 193, 0.4);
+  animation: float 6s infinite ease-in-out;
+}
+
+.pill1 {
+  width: 80px;
+  height: 30px;
+  top: 10%;
+  left: 15%;
+  background: #f48fb1;
+}
+
+.pill2 {
+  width: 60px;
+  height: 25px;
+  top: 60%;
+  right: 10%;
+  background: #ce93d8;
+}
+
+.pill3 {
+  width: 90px;
+  height: 35px;
+  bottom: 15%;
+  left: 30%;
+  background: #f8bbd0;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
